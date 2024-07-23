@@ -3,7 +3,5 @@
   [placeholder]="placeholder"
   class="form-control"
   #txtInput
+  (keyup.enter)="emitText(txtInput.value)"
   />
-
-
-  <!-- cuando se suelte el enter se realiza el console log no usar ngmodel  mediante un output -->
